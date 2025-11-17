@@ -1,0 +1,44 @@
+{
+  "name": "ecommerce-automation-framework",
+  "version": "1.0.0",
+  "description": "Comprehensive E-Commerce test automation framework with Playwright featuring shopping cart workflows, user authentication, product search, checkout process, and API testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:api": "playwright test tests/api/",
+    "test:e2e": "playwright test tests/e2e/",
+    "test:cart": "playwright test tests/e2e/cart.spec.js",
+    "test:checkout": "playwright test tests/e2e/checkout.spec.js",
+    "test:auth": "playwright test tests/e2e/authentication.spec.js",
+    "test:report": "playwright show-report",
+    "playwright:install": "playwright install",
+    "test:parallel": "playwright test --workers=4"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "e-commerce",
+    "shopping-cart",
+    "checkout",
+    "api-testing",
+    "e2e-testing",
+    "page-object-model"
+  ],
+  "author": "Vijay Chuhan",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "dotenv": "^16.3.1",
+    "faker": "^5.5.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
